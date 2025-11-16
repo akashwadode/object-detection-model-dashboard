@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Object Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+
+    <!-- Loading Animation -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Initializing AI Model...</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>🔍 AI Object Detection Dashboard</h1>
+        <button id="theme-toggle">🌙 Dark</button>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <h2>Settings</h2>
+
+            <label>Confidence Threshold</label>
+            <input type="range" id="confidence" min="0.1" max="1" step="0.05" value="0.5">
+
+            <div class="button-group">
+                <button id="start-btn">▶ Start Camera</button>
+                <button id="stop-btn" class="stop">⛔ Stop Camera</button>
+            </div>
+            <h2>Detected Objects</h2>
+            <ul id="detected-list"></ul>
+        </aside>
+
+        <!-- Content Area -->
+        <main>
+
+            <div class="video-section">
+                <div class="video-card glass">
+                    <h3>Normal Camera</h3>
+                    <video id="rawVideo" autoplay playsinline></video>
+                </div>
+
+                <div class="video-card glass">
+                    <h3>AI Detection Camera</h3>
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
