@@ -4,7 +4,7 @@ A modern, real-time **Object Detection Web App** built using **MediaPipe Vision 
 This dashboard uses your webcam to detect objects live and display bounding boxes, labels, and confidence scores in real-time — all inside your browser.
 
 Live Demo (if deployed):  
-🔗 *https://your-netlify-or-github-pages-link*
+🔗 *https://aquamarine-starburst-e1cc47.netlify.app/*
 
 ---
 
